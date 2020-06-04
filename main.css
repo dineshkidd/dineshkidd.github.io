@@ -37,7 +37,7 @@
     height: 100vh;
     z-index: 15;
     place-content: center;
-    opacity: 0%;
+    opacity: 100%;
     display: grid;
     animation: overlay 4s  .1s linear ;
 }
