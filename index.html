@@ -18,6 +18,7 @@
 </head>
 
 <body style="margin: 0;background-color: white;">
+  <div class="overlay"><h2 class="text-4xl">Loading...</h2></div>
 
 
   <div class="flex px-4 sm:px-8 lg:px-18  fixed-top pt-6 pb-4 w-full xl:px-48 border-b-2 border-white" id="nav">
@@ -154,9 +155,10 @@
 
 
     <div class="pb-4 text-xl pt-4" style="text-align:center;">
-      <footer style="color: black;"><i class="icofont-copyright px-2"></i>2020 Dinesh • Crafted with ❤️ by <a 
+      <footer style="color: black;"><i class="icofont-copyright px-2"></i>2020 Dinesh • Crafted with ❤️ by <a
           href="https://instagram.com/dinesh28_" target="_blank" class="font-bold  
-          hover:text-dark-blue hover:border-b-2 hover:border-dark-blue" style="text-decoration:none;color: blue; ">Dinesh</a>
+          hover:text-dark-blue hover:border-b-2 hover:border-dark-blue"
+          style="text-decoration:none;color: blue; ">Dinesh</a>
       </footer>
       <br>
 
@@ -169,48 +171,56 @@
 
       <script>
         document.addEventListener('DOMContentLoaded', function () {
-        document.querySelector('#toggle').onclick = function () {
-        if (document.querySelector('#toggle').className === 'icofont-sun-alt icofont-2x') {
-            // present light
-            document.querySelector('#toggle').className = 'icofont-moon icofont-2x';
-            document.querySelector('body').style.backgroundColor = 'white';
-            document.querySelector('#toggle').style.color = 'white';
-            // document.querySelector('#nav').style.backgroundColor = 'black';
-            // document.querySelector('#logo').src = 'logo/logo-white.svg';
-            // document.querySelector("#contact").style.color = 'white';
-            document.querySelector("#bold").style.color = 'black';
-            document.querySelector("#about").style.color = 'black';
-            document.querySelector("#get").style.color = 'white';
-            document.querySelector("#get").style.backgroundColor = 'black';
-            document.querySelector('footer').style.color = 'black';
-            document.querySelector('#portfolio').style.color = 'black';
+          document.querySelector('#toggle').onclick = function () {
+            if (document.querySelector('#toggle').className === 'icofont-sun-alt icofont-2x') {
+              // present light
+              document.querySelector('#toggle').className = 'icofont-moon icofont-2x';
+              document.querySelector('body').style.backgroundColor = 'white';
+              document.querySelector('#toggle').style.color = 'white';
+              // document.querySelector('#nav').style.backgroundColor = 'black';
+              // document.querySelector('#logo').src = 'logo/logo-white.svg';
+              // document.querySelector("#contact").style.color = 'white';
+              document.querySelector("#bold").style.color = 'black';
+              document.querySelector("#about").style.color = 'black';
+              document.querySelector("#get").style.color = 'white';
+              document.querySelector("#get").style.backgroundColor = 'black';
+              document.querySelector('footer').style.color = 'black';
+              document.querySelector('#portfolio').style.color = 'black';
 
 
-        }
-        else if (document.querySelector('#toggle').className === 'icofont-moon icofont-2x') {
-            //present dark
-            document.querySelector('#toggle').className = 'icofont-sun-alt icofont-2x';
-            document.querySelector('body').style.backgroundColor = 'black';
-            document.querySelector('#toggle').style.color = 'yellow';
-            // document.querySelector('#nav').style.backgroundColor = 'black';
-            // document.querySelector('#logo').src = 'logo/logo-black.svg';
-            // document.querySelector("#contact").style.color = 'black';
-            document.querySelector("#bold").style.color = 'white';
-            document.querySelector("#about").style.color = 'white';
-            document.querySelector("#get").style.color = 'black';
-            document.querySelector("#get").style.backgroundColor = 'white';
-            document.querySelector('footer').style.color = 'white';
-            document.querySelector('#portfolio').style.color = 'white';
+            }
+            else if (document.querySelector('#toggle').className === 'icofont-moon icofont-2x') {
+              //present dark
+              document.querySelector('#toggle').className = 'icofont-sun-alt icofont-2x';
+              document.querySelector('body').style.backgroundColor = 'black';
+              document.querySelector('#toggle').style.color = 'yellow';
+              // document.querySelector('#nav').style.backgroundColor = 'black';
+              // document.querySelector('#logo').src = 'logo/logo-black.svg';
+              // document.querySelector("#contact").style.color = 'black';
+              document.querySelector("#bold").style.color = 'white';
+              document.querySelector("#about").style.color = 'white';
+              document.querySelector("#get").style.color = 'black';
+              document.querySelector("#get").style.backgroundColor = 'white';
+              document.querySelector('footer').style.color = 'white';
+              document.querySelector('#portfolio').style.color = 'white';
 
 
-        }
+            }
 
 
-    };
+          };
 
 
 
-});
+        });
+
+
+        function ov() {
+
+          document.querySelector('.overlay').style.display = 'none';
+        };
+        var delay = 3900;
+        setTimeout(ov, delay);
 
       </script>
 

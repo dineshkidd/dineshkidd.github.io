@@ -26,3 +26,42 @@
 #btn-icon{
     animation: yourAnimation 2s forwards .8s linear;
 }
+
+
+.overlay{
+    position: absolute;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 15;
+    place-content: center;
+    opacity: 0%;
+    display: grid;
+    animation: overlay 4s  .1s linear ;
+}
+@keyframes overlay{
+    0%{
+        opacity: 100%;
+
+    }
+    25%{
+
+        opacity: 75%;
+    }
+    50%{
+        opacity: 100%;
+
+    }
+    75%{
+        opacity: 75%;
+
+    }
+    100%{
+        opacity: 0%;
+        
+
+    }
+}
+
+
