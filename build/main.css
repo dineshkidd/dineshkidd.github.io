@@ -1,0 +1,97 @@
+#nav{
+    position: fixed;
+    background-color: black;
+    margin: 0;
+    z-index: 11;
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: scale(1);
+        }
+    25%{
+        transform: scale(1.5);
+        }
+    50%{
+        transform: scale(1);
+        }
+    75%{
+        transform: scale(1.5);
+        }
+    100%{
+        transform: scale(1);
+        }
+}
+
+#btn-icon{
+    animation: yourAnimation 2s forwards 4s linear;
+    font-size: 50px;
+}
+
+
+.overlay{
+    position: fixed;
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 15;
+    place-content: center;
+    opacity: 100%;
+    display: grid;
+    animation: overlay 4s  .1s linear ;
+}
+@keyframes overlay{
+    0%{
+        opacity: 100%;
+
+    }
+    25%{
+
+        opacity: 75%;
+    }
+    50%{
+        opacity: 100%;
+
+    }
+    75%{
+        opacity: 75%;
+
+    }
+    100%{
+        opacity: 0%;
+        
+
+    }
+}
+@media only screen and (max-width: 640px) {
+    #btn-icon {
+      font-size: 13px;
+    }
+  }
+@media only screen and (min-width: 640px) {
+    #btn-icon {
+      font-size: 15px;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    #btn-icon {
+      font-size: 20px;
+    }
+  }
+  @media only screen and (min-width: 1024px) {
+    #btn-icon {
+      font-size: 20px;
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+  }
+  @media only screen and (min-width: 1280px) {
+    #btn-icon {
+      font-size: 15px;
+      padding-top: 20px;
+    }
+  }
+
+
+
