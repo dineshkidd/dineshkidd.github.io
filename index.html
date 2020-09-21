@@ -6,14 +6,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no," />
   <title>Dinesh</title>
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <link rel="stylesheet" href="build/tailwind.css">
   <link rel="stylesheet" type="text/css" href="icofont/icofont.css">
   <link rel="stylesheet" href="build/main.css">
 </head>
 
 <body style="margin: 0;background-color: white;">
-
 
   <div class="overlay"><h2 class="text-4xl">Loading...</h2></div>
 
@@ -55,8 +54,7 @@
         <a href="https://instagram.com/dinesh28_" target="_blank">
           <button
             class=" px-4 py-2   rounded-lg mt-1 lg:mt-2 xl:mt-4 mb-2 text-xl lg:text-md xl:text-2xl  hover:shadow-2xl transform hover:scale-110 hover:translate-x-2"
-            id="get" style="color: white;background-color: black;">Resume <i
-              class="icofont-long-arrow-right  "></i></button>
+            id="get" style="color: white;background-color: black;">Resume <i class="icofont-long-arrow-right  "></i></button>
         </a>
       </div>
 
@@ -67,59 +65,60 @@
     </div>
 
     <div class="md:text-xl pt-4 md:pt-12 " style="text-align:center;">
-      <footer style="color: black;"><i class="icofont-copyright px-2"></i>2020 Dinesh • Crafted with ❤️ by <a
+      <footer style="color: black;" id="footertext"><i class="icofont-copyright px-2"></i>2020 Dinesh • Crafted with ❤️ by <a
           href="https://instagram.com/dinesh28_" target="_blank" class="font-bold  
           hover:text-dark-blue hover:border-b-2 hover:border-dark-blue"
           style="text-decoration:none;color: blue; ">Dinesh</a>
       </footer>
+    </div>
       <br>
 
-      <script>
-const dark="black";
-const bgdark="black";
-const bright="white";
-const bgbright="white";
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('#toggle').onclick = function () {
-        if (document.querySelector('#toggle').className === 'icofont-sun-alt icofont-2x') {
-            // on light theme
-            document.querySelector('#toggle').className = 'icofont-moon icofont-2x';
-            document.querySelector('body').style.backgroundColor = bright;
-            document.querySelector('footer').style.backgroundColor = bright;
-            document.querySelector('#footertext').style.color = dark;
-            document.querySelector('#toggle').style.color = bright;
-            document.querySelector("#bold").style.color = dark;
-            document.querySelector("#about").style.color = dark;
-            document.querySelector("#get").style.color = bright;
-            document.querySelector("#get").style.backgroundColor = bgdark;
-            document.querySelector('#portfolio').style.color = dark;
+    <script>
+      const dark="black";
+      const bgdark="black";
+      const bright="white";
+      const bgbright="white";
+      document.addEventListener('DOMContentLoaded', function () {
+          document.querySelector('#toggle').onclick = function () {
+              if (document.querySelector('#toggle').className === 'icofont-sun-alt icofont-2x') {
+                  // on light theme
+                  document.querySelector('#toggle').className = 'icofont-moon icofont-2x';
+                  document.querySelector('body').style.backgroundColor = bright;
+                  document.querySelector('footer').style.backgroundColor = bright;
+                  document.querySelector('#footertext').style.color = dark;
+                  document.querySelector('#toggle').style.color = bright;
+                  document.querySelector("#bold").style.color = dark;
+                  document.querySelector("#about").style.color = dark;
+                  document.querySelector("#get").style.color = bright;
+                  document.querySelector("#get").style.backgroundColor = bgdark;
+                  document.querySelector('#portfolio').style.color = dark;
 
 
-        }
-        else if (document.querySelector('#toggle').className === 'icofont-moon icofont-2x') {
-            //on dark theme
-            document.querySelector('#toggle').className = 'icofont-sun-alt icofont-2x';
-            document.querySelector('body').style.backgroundColor = bgdark;
-            document.querySelector('footer').style.backgroundColor = bgdark;
-            document.querySelector('#footertext').style.color = bright;
-            document.querySelector('#toggle').style.color = 'yellow';
-            document.querySelector("#bold").style.color = bright;
-            document.querySelector("#about").style.color = bright;
-            document.querySelector("#get").style.color = dark;
-            document.querySelector("#get").style.backgroundColor = bgbright;
-            document.querySelector('#portfolio').style.color = bright;
-        }
-    };
-});
+              }
+              else if (document.querySelector('#toggle').className === 'icofont-moon icofont-2x') {
+                  //on dark theme
+                  document.querySelector('#toggle').className = 'icofont-sun-alt icofont-2x';
+                  document.querySelector('body').style.backgroundColor = bgdark;
+                  document.querySelector('footer').style.backgroundColor = bgdark;
+                  document.querySelector('#footertext').style.color = bright;
+                  document.querySelector('#toggle').style.color = 'yellow';
+                  document.querySelector("#bold").style.color = bright;
+                  document.querySelector("#about").style.color = bright;
+                  document.querySelector("#get").style.color = dark;
+                  document.querySelector("#get").style.backgroundColor = bgbright;
+                  document.querySelector('#portfolio').style.color = bright;
+              }
+          };
+      });
 
-function ov() {
-    document.querySelector('.overlay').style.display = 'none';
-};
-var delay = 3900;
-setTimeout(ov, delay);
+      function ov() {
+          document.querySelector('.overlay').style.display = 'none';
+      };
+      var delay = 3900;
+      setTimeout(ov, delay);
 
 
-      </script>
+    </script>
 
 
 </body>
