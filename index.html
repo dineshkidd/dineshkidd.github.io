@@ -45,7 +45,7 @@
           <span class="" style="background: linear-gradient(to right, 
         #a200ff, #ff08b5);
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;" >
+  -webkit-background-clip: text;">
             Dinesh
 
           </span>
@@ -61,7 +61,7 @@
 
         <a href="images/Dinesh_resume.pdf" target="_blank">
           <button
-            class=" px-4 py-2   rounded-lg mt-1 lg:mt-2 xl:mt-4 mb-2 text-xl lg:text-md xl:text-2xl  hover:shadow-2xl transform hover:scale-110 hover:translate-x-2"
+            class=" px-4 py-2   rounded-lg mt-1 lg:mt-2 xl:mt-4 mb-2 text-xl lg:text-md xl:text-2xl  hover:shadow-2xl transform hover:scale-110 hover:translate-x-2 "
             id="get" style="color: white;background-color: black;">Resume <i class="icofont-long-arrow-right  "></i></button>
         </a>
       </div>
@@ -82,11 +82,13 @@
       <br>
 
     <script>
+      
       const dark="black";
       const bgdark="black";
       const bright="white";
       const bgbright="white";
       document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('toggle').click();
           document.querySelector('#toggle').onclick = function () {
               if (document.querySelector('#toggle').className === 'icofont-sun-alt icofont-2x') {
                   // on light theme
@@ -99,7 +101,7 @@
                   document.querySelector("#about").style.color = dark;
                   document.querySelector("#get").style.color = bright;
                   document.querySelector("#get").style.backgroundColor = bgdark;
-                  document.querySelector('#portfolio').style.color = dark;
+                  // document.querySelector('#portfolio').style.color = dark;
 
 
               }
@@ -114,17 +116,29 @@
                   document.querySelector("#about").style.color = bright;
                   document.querySelector("#get").style.color = dark;
                   document.querySelector("#get").style.backgroundColor = bgbright;
-                  document.querySelector('#portfolio').style.color = bright;
+                  // document.querySelector('#portfolio').style.color = bright;
               }
           };
       });
+      
+      function theme(){
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+        if(darkThemeMq.matches){
+          console.log(darkThemeMq);
+          document.getElementById('toggle').click();
+        }
+      }
+      var delay = 0;
+      setTimeout(theme, delay);
 
-      function ov() {
-          document.querySelector('.overlay').style.display = 'none';
+      function ov(){
+        document.querySelector('.overlay').style.display = 'none';
+          
       };
-      var delay = 3900;
+      var delay = 3600;
       setTimeout(ov, delay);
 
+      
 
     </script>
 
